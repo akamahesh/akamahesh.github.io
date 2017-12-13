@@ -3,7 +3,7 @@ layout: post
 title: The Sequel to SQL
 date: 2017-12-12 00:00:00 +0300
 description: Advance SQL # Add post description (optional)
-img: software.jpg # Add image post (optional)
+img: sql-sequel.png # Add image post (optional)
 tags: [SQL, database] # add tag
 ---
 
