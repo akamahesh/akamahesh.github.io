@@ -1,0 +1,150 @@
+---
+layout: post
+title: TRY SQL
+date: 2017-12-12 00:00:00 +0300
+description: Post is an introductory course to SQL # Add post description (optional)
+img: software.jpg # Add image post (optional)
+tags: [SQL, DATABASE] # add tag
+---
+
+
+# TRY SQL
+
+```SQL
+SELECT title (coloum name)
+FROM movies; (table name)
+```
+```SQL
+SELECT title, genre, duration
+FROM movies;
+```
+```SQL
+SELECT *
+FROM movies;
+```
+
+Filtering table data
+```SQL
+SELECT title
+FROM movies
+WHERE id = 2;
+```
+
+```SQL
+SELECT *
+FROM movies
+WHERE title = 'The Kid';
+```
+
+Retrive ordered data
+```SQL
+SELECT title
+FROM movies
+ORDER BY  duration DESC;
+```
+
+Comparing data using comparator sign
+```SQL
+SELECT *
+FROM movies
+WHERE duration > 100;  // > >= <=
+```
+Using the Not equal comparison operator
+```SQL
+SELECT *
+FROM movies
+WHERE genre <> 'Horror'
+```
+
+Showing matching criteria using AND Operator
+```SQL
+SELECT title
+FROM movies
+WHERE id = 1
+AND genre = 'Comedy';
+```
+
+```SQL
+SELECT title
+FROM movies
+WHERE duration >100
+OR genre = 'Comedy';
+```
+Level 2 : Adding data to table
+
+Adding data to the table
+```SQL
+INSERT INTO movies (id, title, genre, duration)
+VALUES (5, 'The Circus', 'Comedy',71);
+```
+Same
+```SQL
+INSERT INTO movies
+VALUES (5, 'The Circus', 'Comedy', 71);
+```
+
+ Understanding primary keys
+ SQL can automatically increment the primary key for a table for new rows.
+
+**Changing current Data**
+//Update data in the TABLE
+```SQL
+UPDATE movies
+SET genres = 'Romance', duration = 70
+WHERE id = 5 or id = 3;
+```
+Removing data in a table
+```SQL
+DELETE FROM movies
+WHERE id = 5;
+OR
+WHERE duration<100;
+```
+
+**Creating and Removing Databases and Tables**
+
+creating databases
+```SQL
+CREATE DATABASE Chaplin Theators;
+```
+dropping databases using SQL
+```SQL
+DROP DATABASE Chaplin Theators;
+```
+
+//Using SQL to create new tables
+```SQL
+CREATE TABLE movies(
+id            int,
+title   varchar(50),
+genre   varchar(15),
+duration   int
+);
+```
+
+removing a table
+```SQL
+DROP TABLE movies;
+```
+**Manipulating TABLE**
+alter a column
+```SQL
+ALTER TABLE movies
+ADD COLUMN ratings int;
+```
+//updating movies table with some rating
+```SQL
+UPDATE movies
+SET ratings = 8
+WHERE title = 'Don Juan';
+```
+```SQL
+UPDATE movies
+SET ratings = 9
+WHERE title = 'Peter Pan';
+```
+removing a column in an table
+```SQL
+ALTER TABLE movies
+DROP COLUMN ratings;
+```
