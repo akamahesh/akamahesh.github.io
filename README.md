@@ -10,6 +10,11 @@
 - Support Emoji
 
 
+
+View the website: <https://akamahesh.github.io>
+
+Powered by <https://github.com/artemsheludko/flexible-jekyll>
+
 ### License
 
 GNU General Public License v3.0]

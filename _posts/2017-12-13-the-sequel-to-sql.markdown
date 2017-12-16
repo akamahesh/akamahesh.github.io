@@ -1,70 +1,77 @@
 ---
 layout: post
 title: The Sequel to SQL
-date: 2017-12-12 00:00:00 +0300
-description: Advance SQL # Add post description (optional)
-img: sql-sequel.png # Add image post (optional)
-tags: [SQL, database] # add tag
+date: '2017-12-12 00:00:00 +0300'
+description: Advance SQL
+img: sql-sequel.png
+tags:
+  - SQL
+  - database
 ---
 
 # The Sequel to SQL
+
 Level 1- section 1
-### Common Aggregate Functions
+
+## Common Aggregate Functions
+
 Finding the Number of Rows
 
 Q. How do we find the total number of rows in the Movies table?
 
-```SQL
+```sql
 SELECT count(*)
 FROM Movies;
 ```
 
 Total number of rows that match our search
-```SQL
+
+```sql
 SELECT count(column_name)
 FROM table_name;
 ```
 
 Returns the added sum of values for a group of rows.
-```SQL
+
+```sql
 SELECT sum(colomn_name)
 FROM table_name;
 ```
 
 Returns the largest value in a group of rows.
-```SQL
+
+```sql
 SELECT max(column_name)
 FROM table_name;
 ```
 
 Returns the smallest value in a group of rows
 
-```SQL
+```sql
 SELECT min(column_name)
 FROM table_name;
 ```
 
-```SQL
+```sql
 SELECT avg(column_name)
 FROM table_name;
 ```
 
-
 **Aggregate Functions within SQL Clauses**
 
-```SQL
+```sql
 SELECT genre,sum(cost)
 FROM movies
 GROUP BY genre;
 ```
 
-```SQL
+```sql
 SELECT colomn_name, aggregate_function(colomn_name)
 FROM table_name
 GROUP BY column_name;
 ```
 
-```SQL
+```sql
 SELECT genre, sum(cost)
 FROM Movies
 GROUP BY genre
@@ -73,7 +80,7 @@ HAVING COUNT(*)>1;
 
 The HAVING clause restricts the groups of rows to only those who meet the specified condition.
 
-```SQL
+```sql
 SELECT column_name, aggregate_function(column_name)
 FROM table_name
 Where colomn_name
@@ -81,10 +88,12 @@ HAVING aggregate_function(column_name) operator value;
 ```
 
 ## LEVEL 2 - Section 1
+
 ### IDENtifying Constraints
 
 (column constraints)
-```SQL
+
+```sql
 CREATE TABLE Promotions
 (
   id int,
@@ -92,15 +101,14 @@ CREATE TABLE Promotions
   category varchar(15)
 );
 ```
+
 Why use Constraints?
-> Prevent Null values
-> Ensure column values are unique
-> Provide additional validations
 
+> Prevent Null values Ensure column values are unique Provide additional validations
 
-manually sign Constraints name like this
-(table Constraints)
-```SQL
+manually sign Constraints name like this (table Constraints)
+
+```sql
 CREATE TABLE Promotions
 (
   id int,
@@ -111,8 +119,10 @@ CREATE TABLE Promotions
 ```
 
 ### Primary key
+
 can be defined only in once in a table
-```SQL
+
+```sql
 CREATE TABLE Promotions
 (
   id int PRIMARY KEY,
@@ -122,16 +132,18 @@ CREATE TABLE Promotions
 ```
 
 ## LEVEL 2- SECTION 2
+
 ### Value Constraints
 
 Foreigh KEY
 
-movie_id is a foreign key.  
+movie_id is a foreign key.<br>
 A foreign key is a column in 1 table that references the primary key column of another table.
 
- **Creating a FOREIGN KEY constraint**  
-The REFERENCES keyword can be used to make a FOREIGN KEY constraint.  
-```SQL
+**Creating a FOREIGN KEY constraint**<br>
+The REFERENCES keyword can be used to make a FOREIGN KEY constraint.
+
+```sql
 CREATE TABLE Movies
 (
    id int PRIMARY KEY,
@@ -139,7 +151,7 @@ CREATE TABLE Movies
 );
 ```
 
- ```SQL
+```sql
 CREATE TABLE Promotions
 (
   id int PRIMARY KEY,
@@ -147,11 +159,12 @@ CREATE TABLE Promotions
   name varchar(50),
   category varchar(15)
 );
- ```
+```
 
-or we can just use REFERENCES movies instead  
+or we can just use REFERENCES movies instead<br>
 or we can just use
-```SQL
+
+```sql
 CREATE TABLE Promotions
 (
  id int PRIMARY KEY,
@@ -161,14 +174,16 @@ CREATE TABLE Promotions
  FOREIGN KEY (movie_id) REFERENCES movies
 );
 ```
+
 #### Orphan Records
+
 Orphan records are child records with a foreign key to a parent record that has been deleted.
 
->The FOREIGN KEY constraint help to prevent orphan records
+> The FOREIGN KEY constraint help to prevent orphan records
 
-** CHECK Constraint**
+**CHECK Constraint**
 
-```SQL
+```sql
 CREATE TABLE Movies
 (
   id int PRIMARY KEY,
@@ -177,7 +192,8 @@ CREATE TABLE Movies
   duration int CHECK (duration > 0)
 );
 ```
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+
+First Header | Second Header
+------------ | -------------
+Content Cell | Content Cell
+Content Cell | Content Cell
