@@ -1,56 +1,34 @@
 ---
 layout: post
-title: The Sequel to SQL Level-4
-date: '2017-12-12 00:00:00 +0300'
+title: MySQL Interview Questions
+date: '2017-12-16 00:00:00 +0300'
 description: Advance SQL
-img: sql-sequel.png
+img: i-rest.jpg
 tags:
   - SQL
   - database
 ---
 
-# The Sequel to SQL
+# MySQL Interview Questions
+- Q1.  How is get Structure of table in YSql ?
+```SQL
+DESC TABLENAME
+```
+- Q2. What are the data types available in MYSQL?
+- Ans :INT,VARCHAR, DOUBLE, FLOAT etc.
+1. Numeric Datatype
+2. Date and Time Datatype
+3. String Datatype
 
-Level 4 - Section 1
+- Q3, how man types of JOIN are supported by MySQL?
+- Ans: All type of join supports in mysql are: INNER, FULL, LEFT, RIGHT, UNION .
 
-## Inner Joins
+- Q4. Routeines and Stored Procedure ?
 
-**Fetching Data From Multiple Tables:**  
-```SQL
-SELECT review, movie_id
-FROM Reviews;
-```
-Fetches all the reviews  
-```SQL
-SELECT title
-FROM Movies
-WHERE id IN (1,3,4);
-```
-Fetches all the associated movie titles
-- Now How we can return this data using 1 query instead of 2.
-- Two tables can be joined by the primary key and a foreign key.  
-- Using the INNER JOIN to create this query, we can show where both tables have matching values.  
+- 05. Command to show the current version of MYSQL
+- Ans SELECT VERSION();
 
-```SQL
-SELECT  *
-FROM Movies
-INNER JOIN Reviews
-On Movies.id=Reviews.movie_id  
-```
-- what if we only wanted the movie title and review text to be returned?  
-```SQL
-SELECt Movies.title, Reviews.review
-FROM Movies
-INNER JOIN Reviews
-ON Movies.id = Reviews.movie_id
-```
-- How do we find genres of Peter Pan?
-```SQL
-SELECT Movies.title, Genres.name
-FROM Movies
-INNER JOIN Movies_Genres
-ON Movies.id = Movies_Genres.movie_id
-INNER JOIN Genres
-ON Movies_Genres.genre_id = Genres.id
-WHERE Movies.title = "Peter Pan";
-```
+- Q6. What is the difference between NOW() and CURRENT_DATE()?
+- Now() command shows current year, month, date with hours, minutes and seconds. CURRENT_DATE() show cureent year , month, and date only.
+
+- Q7.
