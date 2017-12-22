@@ -163,9 +163,56 @@ A simple view can be thought of as a subset of a table. It can be used for retri
   - **Full Outer Join**: In Full Outer Join all rows in all joined tables are included, whether they are matched or not.
 4. **Self Join** This is a particular case when one table joins to itself, with one or two aliases to avoid confusion. A self join can be of any type, as long as the joined tables are the same. A self join is rather unique in that it involves a relationship with only one table. The common example is when company has a hierarchal reporting structure whereby one member of staff reports to another. Self Join can be Outer Join or Inner Join.
 
->What is DataWarehousing?
+>What is Data Warehousing?
 
 Subject-oriented, meaning that the data in the database is organized so that all the data elements relating to the same real-world event or object are linked together;
 Time-variant, meaning that the changes to the data in the database are tracked and recorded so that reports can be produced showing changes over time;
 Non-volatile, meaning that data in the database is never over-written or deleted, once committed, the data is static, read-only, but retained for future reporting.
 Integrated, meaning that the database contains data from most or all of an organization's operational applications, and that this data is made consistent.
+
+>What is PL/SQL?  
+
+- PL/SQL is the language we use to write reusable Oracle code.
+- PL in PL/SQL stands for procedural language.
+- In Oracle you can store PL/SQL code in stored procedures, functions, and packages (packages consist of a specification and body).
+
+>MySQL - Data types
+
+**Numeric Data Types**
+1. INT - 11 digits
+2. TINYINT -
+3. SMALLINT -
+4. MEDIUMINT -
+5. BIGINT -
+6. FLOAT(M,D) -
+7. DOUBLE(M,D) -
+8. DECIMAL(M,D) -
+
+**Data and Time Types**
+1. Date
+2. DATETIME
+3. TIMESTAMP
+4. TIME
+5. YEAR(M)
+
+**String Types**
+1. CHAR(M)
+2. VARCHAR(M)
+3. BLOB OR TEXT
+4. TINYBLOB OR TINYTEXT
+5. MEDIUMBLOB OR MEDIUMTEXT
+6. LONGBLOB OR LONGTEXT
+7. ENUM
+
+
+>Creating deleting altering databases and Tables
+>Connection with databases
+>Primary keys, index keys and foreign keys
+>How you start designing tables as per the requirement
+>Selection Query
+>Optimizing the queries with left and right joins
+>Aggregating functions
+>Selecting the unique Rows
+>avoiding the duplicate Rows
+>Search in MySQL tables
+>technical features and General knowledge topics about MYSQL.
