@@ -169,3 +169,31 @@ Subject-oriented, meaning that the data in the database is organized so that all
 Time-variant, meaning that the changes to the data in the database are tracked and recorded so that reports can be produced showing changes over time;
 Non-volatile, meaning that data in the database is never over-written or deleted, once committed, the data is static, read-only, but retained for future reporting.
 Integrated, meaning that the database contains data from most or all of an organization's operational applications, and that this data is made consistent.
+
+>Difference between HAVING and WHERE
+
+HAVING specifies a search conditon for a group or an aggregate function used in SELECT statement.  
+HAVING can be used only with SELECT statement.   
+HAVING is typically used in a GROUP BY clause. When GROUP BY is not used. HAVING behaves like a WHERE clause.  
+
+Example of HAVING and WHERE in one query:  
+```SQL
+SELECT titles.pub_id, AVG(titles.price)
+FROM titles INNER JOIN publishers
+ON titles.pub_id = publishers.pub_id
+WHERE publishers.state = 'CA'
+GROUP BY titles.pub_id
+HAVING AVG(titles.price) > 10
+```
+
+>SQL RIGHT() function
+
+Extract a substring from a string (starting from right):
+
+```SQL
+SELECT RIGHT('SQL HIRE ME',3) AS EXTRACTSTRING
+FROM CUSTOMERS;
+```
+store last three char to EXTRACTSTRING;
+
+>
