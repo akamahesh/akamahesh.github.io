@@ -8,6 +8,8 @@ tags: [Java] # add tag
 ---
 
 # Hackerrank : SQL Notes  
+https://www.w3resource.com/mysql-exercises/
+https://dev.mysql.com/
 
 > Returns the difference between city and distinct city in STATION  table
 
@@ -67,10 +69,18 @@ FROM STATION
 WHERE CITY REGEXP '^[aeiou].*[aeiou]$';
 ```
 
+>Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
 
 ```SQL
+SELECT NAME
+FROM STUDENTS
+WHERE MARKS > 75
+ORDER BY RIGHT(NAME, 3), ID ASC;
 ```
-
+>Write a query identifying the type of each record in the TRIANGLES table using its three side lengths.
 
 ```SQL
+SELECT CASE
+WHEN A + B > C THEN CASE WHEN A = B AND B = C THEN 'Equilateral' WHEN A = B OR B = C OR A = C THEN 'Isosceles' WHEN A != B OR B != C OR A != C THEN 'Scalene' END
+ELSE 'Not A Triangle' END FROM TRIANGLES;
 ```
