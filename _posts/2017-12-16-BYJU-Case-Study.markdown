@@ -1,9 +1,9 @@
 ---
 layout: post
 title: BYJU - Case study
-date: 2017-12-12 00:00:00 +0300
+date: 2017-12-21 00:00:00 +0300
 description:  # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional)
+img: byju_case_study.jpg # Add image post (optional)
 tags: [BYJU , case study] # add tag
 ---
 

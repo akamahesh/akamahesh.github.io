@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Hackerrank - SQL Notes
-date: 2017-12-20 00:00:00 +0500
+date: 2017-12-18 00:00:00 +0500
 description: SQL QUERY Notes # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional)
-tags: [Java] # add tag
+img: hackerearth.jpg # Add image post (optional)
+tags: [SQL] # add tag
 ---
 
 # Hackerrank : SQL Notes  

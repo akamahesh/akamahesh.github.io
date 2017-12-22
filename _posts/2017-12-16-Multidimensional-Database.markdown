@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Multidimensional database : Case Study
-date: 2017-12-12 00:00:00 +0300
+date: 2017-12-20 00:00:00 +0300
 description:  # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional)
+img: multidimensional_databases.jpg # Add image post (optional)
 tags: [Multidimensional databases] # add tag
 ---
 

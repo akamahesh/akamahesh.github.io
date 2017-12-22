@@ -3,7 +3,7 @@ layout: post
 title: Hackerrank - Java Notes
 date: 2017-12-12 00:00:00 +0300
 description: Java Notes # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional)
+img: hackerearth.png # Add image post (optional)
 tags: [Java] # add tag
 ---
 

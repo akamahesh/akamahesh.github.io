@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Competitive Programming Major Topics Covered.
-date: 2017-12-12 00:00:00 +0300
+title: Competitive Programming : Major Topics Covered
+date: 2017-12-20 00:00:00 +0300
 description: Competitive Programming topics # Add post description (optional)
-img: how-to-start.jpg # Add image post (optional)
+img: competitive-programming.jpg # Add image post (optional)
 tags: [Competitive programming] # add tag
 ---
 
@@ -26,4 +26,3 @@ tags: [Competitive programming] # add tag
 13. Probability
 14. Computational Geometry
 15. Greedy Algorithms
-16.
