@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.akamahesh.appindexing",
+    "sha256_cert_fingerprints":
+    ["04:06:D0:D4:CF:7C:5E:D6:5C:2B:CF:13:EB:4C:75:78:0C:8C:81:FF:44:15:24:DF:9E:80:09:98:F4:87:39:9D"]
+  }
+}]
